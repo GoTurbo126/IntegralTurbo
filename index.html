@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete JEE Class 11 Formula Sheet - Physics, Chemistry, Mathematics formulas for JEE Main and Advanced preparation">
+    <meta name="keywords" content="JEE, formula sheet, Class 11, physics formulas, chemistry formulas, maths formulas, JEE Main, JEE Advanced">
+    <title>JEE Formula Sheet - Class 11 Complete Guide</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Class 12 Coming Soon Banner -->
+    <div class="announcement-banner">
+        <div class="container">
+            <div class="banner-content">
+                <span class="banner-icon">🚀</span>
+                <p class="banner-text">
+                    <strong>Class 12 Notes Coming Soon!</strong> We're working hard to bring you comprehensive Class 12 formula sheets. Stay tuned! 📚
+                </p>
+                <button class="banner-close" aria-label="Close banner">✕</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">∫</span>
+                    <span class="logo-text">JEE Formula Sheet</span>
+                    <span class="class-badge">Class 11</span>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="nav" role="navigation">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#formulas" class="nav-link">Formulas</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#feedback" class="nav-link">Feedback</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1 class="hero-title">Master JEE Class 11 with <span class="gradient-text">Quick Formulas</span></h1>
+            <p class="hero-subtitle">58 comprehensive formula sheets covering Physics, Chemistry, and Mathematics</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="58">0</span>
+                    <span class="stat-label">Formula Sheets</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="4">0</span>
+                    <span class="stat-label">Subjects</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="100">0</span>
+                    <span class="stat-label">% Free</span>
+                </div>
+            </div>
+            <a href="#formulas" class="cta-button">Explore Formulas</a>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filters-section" id="formulas">
+        <div class="container">
+            <div class="filters-container glass-panel">
+                <!-- Search Bar -->
+                <div class="search-wrapper">
+                    <input 
+                        type="search" 
+                        id="searchInput" 
+                        class="search-input" 
+                        placeholder="Search formulas, chapters, keywords..."
+                        aria-label="Search formulas"
+                    >
+                    <span class="search-icon">🔍</span>
+                </div>
+
+                <!-- Subject Filters -->
+                <div class="filter-group">
+                    <label class="filter-label">Subject:</label>
+                    <div class="filter-buttons" role="group" aria-label="Subject filters">
+                        <button class="filter-btn active" data-filter="subject" data-value="all">All</button>
+                        <button class="filter-btn" data-filter="subject" data-value="Physics">Physics</button>
+                        <button class="filter-btn" data-filter="subject" data-value="Physical Chemistry">Physical Chemistry</button>
+                        <button class="filter-btn" data-filter="subject" data-value="Inorganic Chemistry">Inorganic Chemistry</button>
+                        <button class="filter-btn" data-filter="subject" data-value="Organic Chemistry">Organic Chemistry</button>
+                        <button class="filter-btn" data-filter="subject" data-value="Mathematics">Mathematics</button>
+                    </div>
+                </div>
+
+                <!-- Level Filters -->
+                <div class="filter-group">
+                    <label class="filter-label">Level:</label>
+                    <div class="filter-buttons" role="group" aria-label="Level filters">
+                        <button class="filter-btn active" data-filter="level" data-value="all">All</button>
+                        <button class="filter-btn" data-filter="level" data-value="Class 11">Class 11</button>
+                        <button class="filter-btn" data-filter="level" data-value="JEE Main">JEE Main</button>
+                        <button class="filter-btn" data-filter="level" data-value="JEE Advanced">JEE Advanced</button>
+                    </div>
+                </div>
+
+                <!-- Results Count -->
+                <div class="results-info">
+                    <span id="resultsCount">Loading formulas...</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formula Cards Section -->
+    <section class="formulas-section">
+        <div class="container">
+            <div id="formulasContainer" class="formulas-grid">
+                <!-- Formula cards will be dynamically inserted here -->
+            </div>
+            
+            <!-- Show More Button -->
+            <div class="show-more-container" id="showMoreContainer">
+                <button id="showMoreBtn" class="show-more-btn">
+                    <span>Show More Formulas</span>
+                    <span class="btn-icon">▼</span>
+                </button>
+            </div>
+            
+            <!-- No Results Message -->
+            <div id="noResults" class="no-results hidden">
+                <div class="no-results-icon">📭</div>
+                <h3>No formulas found</h3>
+                <p>Try adjusting your filters or search terms</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section glass-panel" id="about">
+        <div class="container">
+            <h2 class="section-title">About This Resource</h2>
+            <div class="about-content">
+                <p>This formula sheet is designed to help JEE Class 11 aspirants quickly access important formulas across Physics, Chemistry, and Mathematics. Each formula includes:</p>
+                <ul class="feature-list">
+                    <li>✓ Clear mathematical notation with KaTeX rendering</li>
+                    <li>✓ Subject and difficulty level tags</li>
+                    <li>✓ Downloadable PDF reference sheets</li>
+                    <li>✓ Comprehensive keyword indexing</li>
+                    <li>✓ Quick search and filtering</li>
+                </ul>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="about-icon">📚</div>
+                        <h3>58 Topics Covered</h3>
+                        <p>Complete Class 11 syllabus</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-icon">⚡</div>
+                        <h3>Instant Access</h3>
+                        <p>Search and filter in real-time</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-icon">💯</div>
+                        <h3>100% Free</h3>
+                        <p>No hidden costs ever</p>
+                    </div>
+                </div>
+                <p class="about-note">This is a community resource. Help us improve by providing feedback!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section class="feedback-section" id="feedback">
+        <div class="container">
+            <div class="feedback-card glass-panel">
+                <h2 class="section-title">Help Us Improve</h2>
+                <p class="feedback-description">Found an error? Have suggestions? Want to contribute? We'd love to hear from you!</p>
+                
+                <div class="feedback-embed-placeholder">
+                    <p>📝 <strong>To add feedback form:</strong></p>
+                    <ol style="text-align: left; max-width: 500px; margin: 1rem auto;">
+                        <li>Create a Google Form</li>
+                        <li>Click "Send" → "Embed HTML"</li>
+                        <li>Copy the iframe code</li>
+                        <li>Replace this placeholder in index.html</li>
+                    </ol>
+                    <a href="#" class="cta-button" onclick="alert('Replace this with your Google Form link'); return false;">Open Feedback Form</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 JEE Formula Sheet. Created for students, by students.</p>
+            <p class="footer-note">Class 11 Complete | Class 12 Coming Soon</p>
+            <p class="footer-links">
+                <a href="#home">Home</a> • 
+                <a href="#formulas">Formulas</a> • 
+                <a href="#about">About</a> • 
+                <a href="#feedback">Feedback</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- KaTeX JavaScript -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
