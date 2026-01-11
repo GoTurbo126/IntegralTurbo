@@ -157,18 +157,6 @@
       "pdfLink": "files/laws-of-motion.pdf"
     },
     {
-      "id": 14,
-      "title": "Friction",
-      "subject": "Physics",
-      "chapter": "Frictional Forces",
-      "levels": ["Class 11", "JEE Main"],
-      "formula": "$f_s \\leq \\mu_s N$ and $f_k = \\mu_k N$",
-      "description": "Static and kinetic friction. Coefficient of friction, angle of repose, friction on inclined planes, and motion with friction.",
-      "keywords": ["static friction", "kinetic friction", "coefficient of friction", "angle of repose", "limiting friction", "rolling friction"],
-      "image": "",
-      "pdfLink": "files/friction.pdf"
-    },
-    {
       "id": 15,
       "title": "Circular Motion",
       "subject": "Physics",
@@ -685,4 +673,5 @@
       "pdfLink": "files/environmental-chemistry.pdf"
     }
   ]
+
 }
